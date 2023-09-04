@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+End_to_end_text_summarization_tool_text_summarizer.egg-info/PKG-INFO
+End_to_end_text_summarization_tool_text_summarizer.egg-info/SOURCES.txt
+End_to_end_text_summarization_tool_text_summarizer.egg-info/dependency_links.txt
+End_to_end_text_summarization_tool_text_summarizer.egg-info/top_level.txt
