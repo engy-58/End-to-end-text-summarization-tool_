@@ -3,13 +3,14 @@ transformers
 transformers[sentencepiece]
 datasets
 sacrebleu
-rouge_score 
+rouge_score
 py7zr
 pandas
 nltk
 tqdm
 matplotlib
 torch==1.10.0
+pyyaml  
 
 # Web Framework and Related Dependencies
 fastapi==0.78.0
@@ -22,7 +23,9 @@ mypy-boto3-s3
 
 # Other Utilities
 python-box==6.0.2
-ensure==1.0.2
+ensure==1.0.2 
+pathlib  
+typing  
 
 # Development Dependency (Local Package)
 -e .
