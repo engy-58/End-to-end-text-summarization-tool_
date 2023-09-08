@@ -1,0 +1,40 @@
+[2023-09-08 16:46:28,080: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 16:46:28,091: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 16:46:28,093: INFO: common: created directory at: artifacts]
+[2023-09-08 16:46:28,095: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-08 16:59:57,744: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 16:59:57,744: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 16:59:57,744: INFO: common: created directory at: artifacts]
+[2023-09-08 16:59:57,752: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-08 17:00:09,171: INFO: 1434958058: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 4251198
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "d6437b7b4f65ec7627998d3f6e53ea0a581dc3125be8f3ebd35ed26065acc4aa"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 5410:FE7F:1A8B117:1BA3DDB:64FB28DE
+Accept-Ranges: bytes
+Date: Fri, 08 Sep 2023 13:59:59 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lin2290022-LIN
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1694181599.758514,VS0,VE1062
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: f743d92ec769bde219e71842c866d14ed10d3859
+Expires: Fri, 08 Sep 2023 14:04:59 GMT
+Source-Age: 0
+
+]
+[2023-09-08 17:07:29,494: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 17:07:29,494: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 17:07:29,494: INFO: common: created directory at: artifacts]
+[2023-09-08 17:07:29,503: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-08 17:07:29,503: INFO: 1434958058: File already exists of size: ~ 4152 KB]
