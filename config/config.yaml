@@ -9,6 +9,7 @@ data_ingestion:
 
 data_validation:
   root_dir: artifacts/data_validation
-  source_URL: https://github.com/engy-58/End-to-end-text-summarization-tool_/raw/main/DialogSum_Data.zip
-  local_data_file: artifacts/data_ingestion/data.zip
-  unzip_dir: artifacts/data_ingestion
+  STATUS_FILE: artifacts/data_validation/status.txt
+  ALL_REQUIRED_FILES: ["train", "test", "validation"]
+
+
