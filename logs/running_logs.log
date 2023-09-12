@@ -10,3 +10,46 @@
 [2023-09-08 17:32:47,073: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2023-09-12 12:36:24,758: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-12 12:36:24,765: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-12 12:36:24,769: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-12 12:36:24,769: INFO: common: created directory at: artifacts]
+[2023-09-12 12:36:24,769: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-12 12:36:42,511: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 8643239
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "674cd22f5a93288e6f695d3494517018e288737659f13813fbfde01176f790db"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2CE2:2B25:6E80E7:737D87:6500311B
+Accept-Ranges: bytes
+Date: Tue, 12 Sep 2023 09:36:30 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lin2290024-LIN
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1694511387.304185,VS0,VE2938
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 303493c438a883a96f94f69242517edcb34bd477
+Expires: Tue, 12 Sep 2023 09:41:30 GMT
+Source-Age: 3
+
+]
+[2023-09-12 12:36:42,629: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-12 12:36:42,630: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-12 12:36:42,632: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-12 12:36:42,633: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-12 12:36:42,633: INFO: common: created directory at: artifacts]
+[2023-09-12 12:36:42,633: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-12 12:36:42,635: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
