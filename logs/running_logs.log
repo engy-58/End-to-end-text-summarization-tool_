@@ -53,3 +53,284 @@ x==========x]
 [2023-09-12 12:36:42,635: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2023-09-12 23:12:03,094: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-09-12 23:12:03,094: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-12 23:12:05,018: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-12 23:12:05,028: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-12 23:12:05,076: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-12 23:12:05,076: INFO: common: created directory at: artifacts]
+[2023-09-12 23:12:05,076: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-12 23:12:05,076: ERROR: main: __init__() got an unexpected keyword argument 'dataset_name']
+Traceback (most recent call last):
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\text_summarizer\pipeline\stage_01_data_ingestion.py", line 12, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\text_summarizer\config\configuration.py", line 23, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'dataset_name'
+[2023-09-12 23:14:50,243: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-09-12 23:14:50,243: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-12 23:14:51,248: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-12 23:14:51,248: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-12 23:14:51,256: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-12 23:14:51,256: INFO: common: created directory at: artifacts]
+[2023-09-12 23:14:51,256: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-12 23:15:29,713: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-12 23:15:29,713: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-12 23:15:29,713: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-12 23:15:29,713: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-12 23:15:29,713: INFO: common: created directory at: artifacts]
+[2023-09-12 23:15:29,713: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-12 23:15:29,713: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\dialogsum_dataset']
+Traceback (most recent call last):
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\main.py", line 19, in <module>
+    data_validation.main()
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\text_summarizer\pipeline\stage_02_data_validation.py", line 14, in main
+    data_validation.validate_all_files_exist()
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\text_summarizer\conponents\data_validation.py", line 31, in validate_all_files_exist
+    raise e
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\text_summarizer\conponents\data_validation.py", line 16, in validate_all_files_exist
+    all_files = os.listdir(os.path.join("artifacts","data_ingestion","dialogsum_dataset"))
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\dialogsum_dataset'
+[2023-09-12 23:15:51,865: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-09-12 23:15:51,865: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-12 23:15:52,775: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-12 23:15:52,783: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-12 23:15:52,783: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-12 23:15:52,783: INFO: common: created directory at: artifacts]
+[2023-09-12 23:15:52,783: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-12 23:15:58,450: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-12 23:15:58,450: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-12 23:15:58,530: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-12 23:15:58,530: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-12 23:15:58,530: INFO: common: created directory at: artifacts]
+[2023-09-12 23:15:58,530: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-12 23:15:58,530: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\dialogsum_dataset']
+Traceback (most recent call last):
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\main.py", line 19, in <module>
+    data_validation.main()
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\text_summarizer\pipeline\stage_02_data_validation.py", line 14, in main
+    data_validation.validate_all_files_exist()
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\text_summarizer\conponents\data_validation.py", line 31, in validate_all_files_exist
+    raise e
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\text_summarizer\conponents\data_validation.py", line 16, in validate_all_files_exist
+    all_files = os.listdir(os.path.join("artifacts","data_ingestion","dialogsum_dataset"))
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\dialogsum_dataset'
+[2023-09-12 23:20:55,419: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-09-12 23:20:55,419: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-12 23:20:56,470: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-12 23:20:56,478: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-12 23:20:56,478: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-12 23:20:56,478: INFO: common: created directory at: artifacts]
+[2023-09-12 23:20:56,478: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-12 23:21:02,166: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-12 23:21:02,166: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-12 23:21:02,174: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-12 23:21:02,174: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-12 23:21:02,174: INFO: common: created directory at: artifacts]
+[2023-09-12 23:21:02,174: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-12 23:21:02,182: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:04:12,212: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-09-13 00:04:12,212: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-13 00:04:40,901: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-09-13 00:04:40,901: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-13 00:05:14,822: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2023-09-13 00:05:14,838: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:05:14,838: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:05:14,838: INFO: common: created directory at: artifacts]
+[2023-09-13 00:05:14,838: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-13 00:05:18,461: WARNING: builder: Found cached dataset csv (C:/Users/acer/.cache/huggingface/datasets/knkarthick___csv/knkarthick--dialogsum-c8fac5d84cd35861/0.0.0/6954658bab30a358235fa864b05cf819af0e179325c740e4bc853bcc7ec513e1)]
+[2023-09-13 00:05:18,638: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:05:18,638: INFO: main: >>>>>> stage Data Validation Stage started <<<<<<]
+[2023-09-13 00:05:18,646: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:05:18,646: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:05:18,652: INFO: common: created directory at: artifacts]
+[2023-09-13 00:05:18,652: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-13 00:05:18,662: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:05:18,662: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<]
+[2023-09-13 00:05:18,666: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:05:18,666: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:05:18,670: INFO: common: created directory at: artifacts]
+[2023-09-13 00:05:18,670: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-13 00:05:22,894: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 30, in <module>
+    data_transformation.main()
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\text_summarizer\pipeline\stage_03_data_transformation.py", line 15, in main
+    data_transformation.convert()
+  File "C:\Users\acer\End-to-end-text-summarization-tool_\text_summarizer\conponents\data_transformation.py", line 26, in convert
+    dataset_dialogsum_pt.save_to_disk(os.path.join(self.config.root_dir,"dialogsum_dataset"))
+NameError: name 'os' is not defined
+[2023-09-13 00:08:50,251: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2023-09-13 00:08:50,256: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:08:50,256: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:08:50,256: INFO: common: created directory at: artifacts]
+[2023-09-13 00:08:50,256: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-13 00:08:53,980: WARNING: builder: Found cached dataset csv (C:/Users/acer/.cache/huggingface/datasets/knkarthick___csv/knkarthick--dialogsum-c8fac5d84cd35861/0.0.0/6954658bab30a358235fa864b05cf819af0e179325c740e4bc853bcc7ec513e1)]
+[2023-09-13 00:08:54,187: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:08:54,187: INFO: main: >>>>>> stage Data Validation Stage started <<<<<<]
+[2023-09-13 00:08:54,202: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:08:54,202: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:08:54,204: INFO: common: created directory at: artifacts]
+[2023-09-13 00:08:54,204: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-13 00:08:54,207: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:08:54,207: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<]
+[2023-09-13 00:08:54,207: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:08:54,207: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:08:54,207: INFO: common: created directory at: artifacts]
+[2023-09-13 00:08:54,216: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-13 00:08:54,841: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\train\cache-71e4ac9e3b3c2f6e.arrow]
+[2023-09-13 00:08:55,320: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\validation\cache-14b4861ec5f3b27f.arrow]
+[2023-09-13 00:08:55,465: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:11:56,552: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2023-09-13 00:11:56,560: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:11:56,560: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:11:56,560: INFO: common: created directory at: artifacts]
+[2023-09-13 00:11:56,560: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-13 00:12:00,741: WARNING: builder: Found cached dataset csv (C:/Users/acer/.cache/huggingface/datasets/knkarthick___csv/knkarthick--dialogsum-c8fac5d84cd35861/0.0.0/6954658bab30a358235fa864b05cf819af0e179325c740e4bc853bcc7ec513e1)]
+[2023-09-13 00:12:00,891: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:12:00,891: INFO: main: >>>>>> stage Data Validation Stage started <<<<<<]
+[2023-09-13 00:12:00,899: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:12:00,899: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:12:00,899: INFO: common: created directory at: artifacts]
+[2023-09-13 00:12:00,899: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-13 00:12:00,899: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:12:00,908: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<]
+[2023-09-13 00:12:00,908: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:12:00,908: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:12:00,908: INFO: common: created directory at: artifacts]
+[2023-09-13 00:12:00,908: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-13 00:12:01,258: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\train\cache-71e4ac9e3b3c2f6e.arrow]
+[2023-09-13 00:12:01,267: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\test\cache-eb6a198b6b67dfc3.arrow]
+[2023-09-13 00:12:01,658: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:12:38,191: INFO: main: >>>>>> Data Ingestion Stage started <<<<<<]
+[2023-09-13 00:12:38,191: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:12:38,200: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:12:38,200: INFO: common: created directory at: artifacts]
+[2023-09-13 00:12:38,200: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-13 00:12:41,548: WARNING: builder: Found cached dataset csv (C:/Users/acer/.cache/huggingface/datasets/knkarthick___csv/knkarthick--dialogsum-c8fac5d84cd35861/0.0.0/6954658bab30a358235fa864b05cf819af0e179325c740e4bc853bcc7ec513e1)]
+[2023-09-13 00:12:41,726: INFO: main: >>>>>> Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:12:41,726: INFO: main: >>>>>> Data Validation Stage started <<<<<<]
+[2023-09-13 00:12:41,726: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:12:41,726: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:12:41,726: INFO: common: created directory at: artifacts]
+[2023-09-13 00:12:41,726: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-13 00:12:41,734: INFO: main: >>>>>> Data Validation Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:12:41,734: INFO: main: >>>>>> Data Transformation Stage started <<<<<<]
+[2023-09-13 00:12:41,734: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:12:41,734: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:12:41,734: INFO: common: created directory at: artifacts]
+[2023-09-13 00:12:41,742: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-13 00:12:42,097: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\train\cache-71e4ac9e3b3c2f6e.arrow]
+[2023-09-13 00:12:42,105: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\test\cache-eb6a198b6b67dfc3.arrow]
+[2023-09-13 00:12:42,122: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\validation\cache-0621167c51801332.arrow]
+[2023-09-13 00:12:42,247: INFO: main: >>>>>> Data Transformation Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:13:16,105: INFO: main: >>>>>> Data Ingestion Stage started <<<<<<]
+[2023-09-13 00:13:16,110: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:13:16,110: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:13:16,112: INFO: common: created directory at: artifacts]
+[2023-09-13 00:13:16,112: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-13 00:13:20,174: WARNING: builder: Found cached dataset csv (C:/Users/acer/.cache/huggingface/datasets/knkarthick___csv/knkarthick--dialogsum-c8fac5d84cd35861/0.0.0/6954658bab30a358235fa864b05cf819af0e179325c740e4bc853bcc7ec513e1)]
+[2023-09-13 00:13:20,344: INFO: main: >>>>>> Data Ingestion Stage completed <<<<<<]
+[2023-09-13 00:13:20,344: INFO: main: >>>>>> Data Validation Stage started <<<<<<]
+[2023-09-13 00:13:20,344: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:13:20,344: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:13:20,344: INFO: common: created directory at: artifacts]
+[2023-09-13 00:13:20,344: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-13 00:13:20,352: INFO: main: >>>>>> Data Validation Stage completed <<<<<<]
+[2023-09-13 00:13:20,352: INFO: main: >>>>>> Data Transformation Stage started <<<<<<]
+[2023-09-13 00:13:20,352: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:13:20,352: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:13:20,352: INFO: common: created directory at: artifacts]
+[2023-09-13 00:13:20,352: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-13 00:13:20,972: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\train\cache-71e4ac9e3b3c2f6e.arrow]
+[2023-09-13 00:13:20,996: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\test\cache-eb6a198b6b67dfc3.arrow]
+[2023-09-13 00:13:21,012: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\validation\cache-0621167c51801332.arrow]
+[2023-09-13 00:13:21,156: INFO: main: >>>>>> Data Transformation Stage completed <<<<<<]
+[2023-09-13 00:13:45,005: INFO: main: >>>>>> Data Ingestion Stage started <<<<<<]
+[2023-09-13 00:13:45,013: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:13:45,013: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:13:45,013: INFO: common: created directory at: artifacts]
+[2023-09-13 00:13:45,013: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-13 00:13:48,401: WARNING: builder: Found cached dataset csv (C:/Users/acer/.cache/huggingface/datasets/knkarthick___csv/knkarthick--dialogsum-c8fac5d84cd35861/0.0.0/6954658bab30a358235fa864b05cf819af0e179325c740e4bc853bcc7ec513e1)]
+[2023-09-13 00:13:48,549: INFO: main: >>>>>> Data Ingestion Stage completed <<<<<<
+
+]
+[2023-09-13 00:13:48,549: INFO: main: >>>>>> Data Validation Stage started <<<<<<]
+[2023-09-13 00:13:48,549: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:13:48,557: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:13:48,557: INFO: common: created directory at: artifacts]
+[2023-09-13 00:13:48,557: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-13 00:13:48,557: INFO: main: >>>>>> Data Validation Stage completed <<<<<<
+
+]
+[2023-09-13 00:13:48,557: INFO: main: >>>>>> Data Transformation Stage started <<<<<<]
+[2023-09-13 00:13:48,566: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:13:48,566: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:13:48,566: INFO: common: created directory at: artifacts]
+[2023-09-13 00:13:48,566: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-13 00:13:48,933: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\train\cache-71e4ac9e3b3c2f6e.arrow]
+[2023-09-13 00:13:48,949: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\test\cache-eb6a198b6b67dfc3.arrow]
+[2023-09-13 00:13:48,975: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\validation\cache-0621167c51801332.arrow]
+[2023-09-13 00:13:49,121: INFO: main: >>>>>> Data Transformation Stage completed <<<<<<
+
+]
+[2023-09-13 00:14:49,139: INFO: main: >>>>>> Data Ingestion Stage started <<<<<<]
+[2023-09-13 00:14:49,147: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:14:49,147: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:14:49,147: INFO: common: created directory at: artifacts]
+[2023-09-13 00:14:49,147: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-13 00:14:53,377: WARNING: builder: Found cached dataset csv (C:/Users/acer/.cache/huggingface/datasets/knkarthick___csv/knkarthick--dialogsum-c8fac5d84cd35861/0.0.0/6954658bab30a358235fa864b05cf819af0e179325c740e4bc853bcc7ec513e1)]
+[2023-09-13 00:14:53,525: INFO: main: >>>>>> Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:14:53,525: INFO: main: >>>>>> Data Validation Stage started <<<<<<]
+[2023-09-13 00:14:53,525: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:14:53,533: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:14:53,533: INFO: common: created directory at: artifacts]
+[2023-09-13 00:14:53,533: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-13 00:14:53,533: INFO: main: >>>>>> Data Validation Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 00:14:53,533: INFO: main: >>>>>> Data Transformation Stage started <<<<<<]
+[2023-09-13 00:14:53,541: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 00:14:53,541: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 00:14:53,541: INFO: common: created directory at: artifacts]
+[2023-09-13 00:14:53,541: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-13 00:14:54,113: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\train\cache-71e4ac9e3b3c2f6e.arrow]
+[2023-09-13 00:14:54,138: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\test\cache-eb6a198b6b67dfc3.arrow]
+[2023-09-13 00:14:54,146: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\acer\End-to-end-text-summarization-tool_\artifacts\data_ingestion\dialogsum_dataset\validation\cache-0621167c51801332.arrow]
+[2023-09-13 00:14:54,310: INFO: main: >>>>>> Data Transformation Stage completed <<<<<<
+
+x==========x]

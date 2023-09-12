@@ -192,3 +192,8 @@ Source-Age: 1
 [2023-09-12 22:50:16,876: INFO: common: yaml file: params.yaml loaded successfully]
 [2023-09-12 22:50:16,876: INFO: common: created directory at: artifacts]
 [2023-09-12 22:50:16,876: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-12 22:53:00,208: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-12 22:53:00,215: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-12 22:53:00,215: INFO: common: created directory at: artifacts]
+[2023-09-12 22:53:00,215: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-12 22:53:04,214: WARNING: builder: Found cached dataset csv (C:/Users/acer/.cache/huggingface/datasets/knkarthick___csv/knkarthick--dialogsum-c8fac5d84cd35861/0.0.0/6954658bab30a358235fa864b05cf819af0e179325c740e4bc853bcc7ec513e1)]
