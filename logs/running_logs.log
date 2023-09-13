@@ -334,3 +334,32 @@ x==========x]
 [2023-09-13 00:14:54,310: INFO: main: >>>>>> Data Transformation Stage completed <<<<<<
 
 x==========x]
+[2023-09-13 21:09:24,421: INFO: main: >>>>>> Data Ingestion Stage started <<<<<<]
+[2023-09-13 21:09:24,424: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 21:09:24,425: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 21:09:24,425: INFO: common: created directory at: artifacts]
+[2023-09-13 21:09:24,426: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-13 21:10:02,522: INFO: main: >>>>>> Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 21:10:02,523: INFO: main: >>>>>> Data Validation Stage started <<<<<<]
+[2023-09-13 21:10:02,525: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 21:10:02,527: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 21:10:02,527: INFO: common: created directory at: artifacts]
+[2023-09-13 21:10:02,527: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-13 21:10:02,527: INFO: main: >>>>>> Data Validation Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 21:10:02,527: INFO: main: >>>>>> Data Transformation Stage started <<<<<<]
+[2023-09-13 21:10:02,532: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 21:10:02,532: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 21:10:02,532: INFO: common: created directory at: artifacts]
+[2023-09-13 21:10:02,532: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-13 21:10:05,708: INFO: main: >>>>>> Data Transformation Stage completed <<<<<<
+
+x==========x]
+[2023-09-13 21:10:05,708: INFO: main: >>>>>> Model Training Stage started <<<<<<]
+[2023-09-13 21:10:05,713: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-13 21:10:05,713: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-13 21:10:05,713: INFO: common: created directory at: artifacts]
+[2023-09-13 21:10:05,713: INFO: common: created directory at: artifacts/model_training]

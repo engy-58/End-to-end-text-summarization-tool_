@@ -1,6 +1,7 @@
 from text_summarizer.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from text_summarizer.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
 from text_summarizer.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
+from text_summarizer.pipeline.stage_04_model_training import ModelTrainingTrainingPipeline
 from text_summarizer.loggings import logger
 
 def run_pipeline(stage_name, pipeline):
@@ -17,7 +18,8 @@ if __name__ == "__main__":
     stages = [
         ("Data Ingestion Stage", DataIngestionTrainingPipeline),
         ("Data Validation Stage", DataValidationTrainingPipeline),
-        ("Data Transformation Stage", DataTransformationTrainingPipeline)
+        ("Data Transformation Stage", DataTransformationTrainingPipeline),
+        ("Model Training Stage", ModelTrainingTrainingPipeline)
     ]
 
     for stage_name, pipeline_class in stages:

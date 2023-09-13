@@ -16,4 +16,9 @@ data_transformation:
   data_path: artifacts/data_ingestion/dialogsum_dataset
   tokenizer_name: google/flan-t5-base
 
+model_training:
+  root_dir: artifacts/model_training
+  data_path: artifacts/data_transformation/dialogsum_dataset
+  model_ckpt: google/flan-t5-base
+
 
